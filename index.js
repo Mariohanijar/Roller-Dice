@@ -7,6 +7,10 @@ const diceInput = document.getElementById("diceInput")
 
 
 function rollDice(){
+    if(diceInput.value > 10){
+        window.alert("Coloque um número menor que 10")
+        return
+    }
     for(let i = 0; i<diceInput.value; i++){
         let diceNumbers = Number(Math.floor(Math.random()*6+1))
         dados.push(diceNumbers)

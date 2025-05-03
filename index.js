@@ -29,5 +29,4 @@ function rollDice(){
     dados = [];
     images = [];
     sum = 0;
-
 }

@@ -5,13 +5,6 @@ let dados = []
 let sum = 0;
 const diceInput = document.getElementById("diceInput")
 
-diceInput.addEventListener('input', function() {
-    if (this.value > 10) {
-        this.value = 10;
-    } else if (this.value < 1) {
-        this.value = 1;
-    }
-});
 
 function rollDice(){
     for(let i = 0; i<diceInput.value; i++){

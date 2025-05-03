@@ -6,11 +6,17 @@ let sum = 0;
 const diceInput = document.getElementById("diceInput")
 
 
+
 function rollDice(){
     if(diceInput.value > 10){
-        window.alert("Coloque um número menor que 10")
+        window.alert("Put a number less than 10")
         return
     }
+   else if(diceInput.value < 1){
+        window.alert("Put a number greater than 1")
+        return
+    }
+    
     for(let i = 0; i<diceInput.value; i++){
         let diceNumbers = Number(Math.floor(Math.random()*6+1))
         dados.push(diceNumbers)
